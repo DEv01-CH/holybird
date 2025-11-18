@@ -51,7 +51,7 @@ a:hover {
 .login-container h1 {
     color: #00FFFF;
     font-size: 40px;
-    margin-bottom: 20px; /* Adjusted margin */
+    margin-bottom: 20px;
 }
 
 .login-input {
@@ -127,9 +127,9 @@ a:hover {
 .sidebar-logo {
     width: 60px;
     height: 60px;
-    border: 2px dashed #00FFFF;
+    border: 2px #00FFFF;
     border-radius: 50%;
-    margin: 0 auto 32px auto; /* Centered and spaced */
+    margin: 0 auto 32px auto; 
 }
 
 .nav-link {
@@ -229,3 +229,69 @@ a:hover {
     color: #00FFFF;
 }
 
+.trends {
+    width: 25%;
+    padding: 24px 16px;
+}
+
+.trends-container {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.trends-container h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.trend-item {
+    margin-bottom: 19px;
+}
+
+.trend-category {
+    font-size: 14px;
+    color: #888;
+}
+
+.trend-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.trend-posts {
+    font-size: 14px;
+    color: #888;
+}
+
+.trend-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.trend-posts {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+@media (max-width: 800px) {
+    .sidebar,
+    .trends {
+        display: none;
+    }
+
+    .feed {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        border: none;
+        padding: 16px 0;
+    }
+}
