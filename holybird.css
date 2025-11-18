@@ -89,3 +89,8 @@ a:hover {
     font-size: 14px;
     color: #888;
 }
+
+.logoimg{
+   
+    border-radius: 50%;
+}
