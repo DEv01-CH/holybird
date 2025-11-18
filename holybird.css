@@ -92,5 +92,7 @@ a:hover {
 
 .logoimg{
    
+    height: 66px;
+    width: 66px;
     border-radius: 50%;
 }
