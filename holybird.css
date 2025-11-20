@@ -305,3 +305,23 @@ a:hover {
         padding: 16px 0;
     }
 }
+
+.search-container {
+    margin-bottom: 16px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-input:focus {
+    border: 1px solid #ffffff;
+    background-color: #000000;
+}
