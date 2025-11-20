@@ -124,12 +124,18 @@ a:hover {
     border-right: 1px solid #2f2f2f;
 }
 
+
+.logo-section {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 32px;     
+}
+
 .sidebar-logo {
     width: 60px;
     height: 60px;
-    border: 2px #00FFFF;
     border-radius: 50%;
-    margin: 0 auto 32px auto; 
+    
 }
 
 .nav-link {
