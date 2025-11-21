@@ -7,8 +7,8 @@
 </head>
 <style>
 *{
+    background-color: rgb(33, 33, 33);
 
-    background-color: grey;
 }
 
 .notifications_head {
@@ -16,7 +16,9 @@
     color: white;
     font-family: Arial, sans-serif;
     background-color: black;
+    border-color: 20px solid white;
     padding: 20px;
+    box-sizing: border-box;
     border-radius: 20px;
 }
 
@@ -26,19 +28,21 @@
     font-family: Arial, sans-serif;
     background-color: black;
     padding: 10px;
-    border-radius: 10px;
-    border-color:1px solid grey;
-    height: 00px;
+    border-radius: 20px;
+    border-color: 5px solid white;
+    height: 100px;
     width: 900px;
     padding: 300px;
-    margin: auto;
+    margin: 10px auto;
 }
     
 </style>
+
+
 <body>
     <div>
         <h1 class="notifications_head">Notifications Page</h1>
-        <p class="notifications_body">No current notifications</p>
+        <div class="notifications_body">No current notifications</div>
     </div>
 </body>
 </html>
