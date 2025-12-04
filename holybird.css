@@ -77,6 +77,8 @@ a:hover {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.2s;
+    cursor: pointer;
+
 }
 
 .login-button:hover {
@@ -128,7 +130,7 @@ a:hover {
 .logo-section {
     display: flex;
     justify-content: center; 
-    margin-bottom: 32px;     
+    margin-bottom: 32px;;     
 }
 
 .sidebar-logo {
@@ -289,8 +291,7 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-    .sidebar,
-    .trends {
+    .sidebar,.trends {
         display: none;
     }
 
@@ -301,8 +302,7 @@ a:hover {
 
 @media (max-width: 480px) {
     .login-container {
-        border: none;
-        padding: 16px 0;
+        
     }
 }
 
