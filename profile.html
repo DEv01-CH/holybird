@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - HolyBird</title>
+    <link rel="stylesheet" href="holybird.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                 <img class="logoimg" src="logo.png" alt="HB">
+            </div>
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="explore.html" class="nav-link">Explore</a>
+            <a href="notifications.html" class="nav-link">Notifications</a>
+            <a href="messages.html" class="nav-link">Messages</a>
+            <a href="profile.html" class="nav-link" style="color: #00FFFF;">Profile</a>
+             <br>
+            <a href="holybird.html" class="nav-link" style="font-size: 16px; color: #888;">Logout</a>
+        </div>
+        
+        <div class="feed">
+            <div class="feed-header">@Doremon420</div>
+            
+            <div style="background-color: #333; height: 150px; position: relative;">
+            </div>
+            <div style="padding: 16px; position: relative;">
+                <div style="width: 100px; height: 100px; background-color: #000; border-radius: 50%; border: 4px solid #000; position: absolute; top: -50px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="profilePic.png" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <div style="margin-top: 50px;">
+                    <div style="font-size: 20px; font-weight: bold;">Doremon</div>
+                    <div style="color: #888;">@Doremon420</div>
+                    <br>
+                    <div style="font-size: 15px;">Building HolyBird</div>
+                    <br>
+                    <div style="display: flex; gap: 20px; color: #888; font-size: 14px;">
+                        <span><strong style="color: #fff;">142</strong> Following</span>
+                        <span><strong style="color: #fff;">2,048</strong> Followers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-bottom: 1px solid #2f2f2f; display: flex; font-weight: bold; margin-top: 10px;">
+                <div style="flex: 1; text-align: center; padding: 15px; border-bottom: 3px solid #00FFFF; color: #00FFFF;">Posts</div>
+                <div style="flex: 1; text-align: center; padding: 15px; color: #888;">Replies</div>
+                <div style="flex: 1; text-align: center; padding: 15px; color: #888;">Likes</div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <span class="post-username">Current User</span>
+                    <span class="post-handle">@User_123</span>
+                </div>
+                <div class="post-content">
+                    Just finished coding the login page! #Javascript
+                </div>
+                <div class="post-actions">
+                    <div>Comment</div>
+                    <div>Like</div>
+                    <div>Share</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="trends">
+             <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input">
+            </div>
+            <div class="trends-container">
+                <h2>You might like</h2>
+                <div class="trend-item">
+                    <div class="trend-name">Coding 101</div>
+                    <div class="trend-category">Education</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
