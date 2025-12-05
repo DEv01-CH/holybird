@@ -3,51 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notifications - HolyBird</title>
+    <link rel="stylesheet" href="holybird.css">
 </head>
-<style>
-*{
-    background-color: rgb(33, 33, 33);
-   
-
-}
-
-.notifications_head {
-    text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    border-color: 5px solid white;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
-
-}
-
-.notifications_body {
-    text-align: center;
-    color: gray;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    padding: 10px;
-    border-radius: 20px;
-    border-color: 5px solid white;
-    height: 100px;
-    width: 900px;
-    padding: 300px;
-    margin: 10px auto;
-
-}
-
-    
-</style>
-
-
 <body>
-    <div>
-        <h1 class="notifications_head">Notifications Page</h1>
-        <div></div>
-        <div class="notifications_body">No current notifications</div>
-
+    <div class="app-container">
+        
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                 <img class="logoimg" src="logo.png" alt="HB">
+            </div>
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="explore.html" class="nav-link">Explore</a>
+            <a href="notifications.html" class="nav-link" style="color: #00FFFF;">Notifications</a>
+            <a href="messages.html" class="nav-link">Messages</a>
+            <a href="profile.html" class="nav-link">Profile</a>
+             <br>
+            <a href="holybird.html" class="nav-link" style="font-size: 16px; color: #888;">Logout</a>
+        </div>
+        
+        <div class="feed">
+            <div class="feed-header">Notifications</div>
+            
+            <div class="post">
+                <div class="post-content">
+                    <span style="color: #00FFFF;">★</span> <strong>Ajay Sir</strong> liked your post.
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-content">
+                    <span style="color: #00FFFF;">➤</span> <strong>Project Lead</strong> shared a new update.
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-content">
+                     <span style="color: #00FFFF;">@</span> <strong>Classmate_01</strong> mentioned you in a comment.
+                </div>
+            </div>
+            
+             <div style="text-align: center; padding: 40px; color: gray;">
+                No more notifications
+            </div>
+        </div>
+        
+        <div class="trends">
+             <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input">
+            </div>
+            <div class="trends-container">
+                <h2>Who to follow</h2>
+                <div class="trend-item">
+                    <div class="trend-name">College Official</div>
+                    <div class="trend-category">@college_admin</div>
+                </div>
+            </div>
+        </div>
     </div>
+</body>
 </html>
