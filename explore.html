@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore - HolyBird</title>
+    <link rel="stylesheet" href="holybird.css">
 </head>
 <body>
-    <div>explore</div>
+    <div class="app-container">
+        
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                 <img class="logoimg" src="logo.png" alt="HB">
+            </div>
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="explore.html" class="nav-link" style="color: #00FFFF;">Explore</a>
+            <a href="notifications.html" class="nav-link">Notifications</a>
+            <a href="messages.html" class="nav-link">Messages</a>
+            <a href="profile.html" class="nav-link">Profile</a>
+             <br>
+            <a href="holybird.html" class="nav-link" style="font-size: 16px; color: #888;">Logout</a>
+        </div>
+        
+        <div class="feed">
+            <div class="feed-header">Explore</div>
+            
+            <div style="padding: 20px;">
+                <img src="https://via.placeholder.com/600x300/000000/00FFFF?text=News+Banner" style="width:100%; border-radius: 15px; border: 1px solid #333;">
+            </div>
+
+            <div class="post">
+                <div class="post-category" style="color:#00FFFF; font-size:12px;">News · LIVE</div>
+                <div class="post-content" style="font-weight:bold; font-size: 18px; margin-top:5px;">
+                    College Hackathon results announced today!
+                </div>
+            </div>
+
+            <div class="post">
+                 <div class="post-category" style="color:#00FFFF; font-size:12px;">Technology · Trending</div>
+                <div class="post-content" style="font-weight:bold; font-size: 18px; margin-top:5px;">
+                   New AI model breaks records in coding benchmarks.
+                </div>
+            </div>
+        </div>
+        
+        <div class="trends">
+             <div class="search-container">
+                <input type="text" placeholder="Search HolyBird" class="search-input">
+            </div>
+            <div class="trends-container">
+                <h2>Trends for you</h2>
+                <div class="trend-item">
+                    <div class="trend-category">Technology</div>
+                    <div class="trend-name">#WebDev</div>
+                    <div class="trend-posts">50k Posts</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
