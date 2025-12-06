@@ -37,6 +37,7 @@ a:hover {
     border: 1px solid #00FFFF;
     border-radius: 15px;
     text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
 .logo-placeholder {
@@ -49,6 +50,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    animation: fadeIn 1s ease-out 0.2s backwards;
 }
 
 .logoimg {
@@ -61,6 +63,7 @@ a:hover {
     color: #00FFFF;
     font-size: 40px;
     margin-bottom: 20px;
+    animation: fadeIn 1s ease-out 0.2s backwards;
 }
 
 .login-input {
@@ -72,6 +75,16 @@ a:hover {
     color: #ffffff;
     border-radius: 8px;
     font-size: 16px;
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+input.login-input:nth-of-type(1) {
+    animation-delay: 0.4s;
+}
+
+input.login-input:nth-of-type(2) {
+    animation-delay: 0.6s;
 }
 
 .login-button {
@@ -85,19 +98,24 @@ a:hover {
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
     cursor: pointer;
     border: none;
+    opacity: 0;
+    animation: slideUp 0.5s ease-out 0.8s forwards;
 }
 
 .login-button:hover {
     background-color: #00cccc;
+    transform: scale(1.03);
 }
 
 .login-footer {
     margin-top: 24px;
     font-size: 14px;
     color: #888;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out 1s forwards;
 }
 
 #error-msg {
@@ -105,6 +123,26 @@ a:hover {
     margin-bottom: 15px;
     display: none;
     font-weight: bold;
+}
+
+.shake-animation {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
 }
 
 .app-container {
@@ -163,6 +201,7 @@ a:hover {
     background-color: rgba(0,0,0,0.8);
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .new-post {
